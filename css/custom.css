@@ -1,0 +1,28 @@
+@font-face {
+  font-family: defaultFont;
+  src: url(./../media/fonts/ProximaNova-Light.otf);
+}
+
+*{
+  font-family: defaultFont;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.site-header {
+  margin-left: 7%;
+  margin-top: 7%;
+  text-align: left;
+}
+
+.site-title {
+  font-size: 12rem;
+  color: white;
+}
+
+.site-subtitle {
+  font-size: 4rem;
+  color: white;
+}
