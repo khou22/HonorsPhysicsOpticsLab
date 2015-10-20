@@ -39,3 +39,8 @@
   height: 100vh;
   transform-style: preserve-3d;
 }
+
+.layer-content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
