@@ -18,12 +18,17 @@
 }
 
 .site-title {
-  font-size: 12rem;
+  font-size: 9rem;
   color: white;
 }
 
 .site-subtitle {
   font-size: 5rem;
+  color: white;
+}
+
+.site-section-title {
+  font-size: 4rem;
   color: white;
 }
 
@@ -36,5 +41,5 @@
 .scroll-down-arrow {
   float: right;
   font-size: 5rem;
-  margin-top: -5%;
+  margin-top: -8%;
 }

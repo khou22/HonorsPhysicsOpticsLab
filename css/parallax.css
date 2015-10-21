@@ -1,5 +1,5 @@
 .parallax {
-  perspective: 1px;
+  perspective: 1.1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
