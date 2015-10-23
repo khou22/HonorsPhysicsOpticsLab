@@ -22,6 +22,7 @@ Red:
 
 .background1 {
   background-color: #3286A8;
+  /*background-image: url(../media/backgrounds/background1.jpg);*/
 }
 
 .background2 {
@@ -41,13 +42,13 @@ Red:
 }
 
 .background6 {
-  background-color: #D5491F;
+  background-color: #80A454;
 }
 
 .background7 {
-  background-color: #DA8D0F;
+  background-color: #D5491F;
 }
 
 .background8 {
-  background-color: #3286A8;
+  background-color: #DA8D0F;
 }
