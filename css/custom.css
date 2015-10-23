@@ -11,35 +11,60 @@
     display: none; 
 }
 
-.site-header {
+.lab-header {
   margin-left: 7%;
   margin-top: 7%;
   text-align: left;
 }
 
-.site-title {
+.lab-title {
   font-size: 9rem;
   color: white;
 }
 
-.site-subtitle {
+.lab-subtitle {
   font-size: 5rem;
   color: white;
+  text-align: center;
 }
 
-.site-section-title {
+.lab-section-title {
   font-size: 4rem;
   color: white;
 }
 
 .lab-abstract {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
+
 }
 
 .scroll-down-arrow {
   float: right;
   font-size: 5rem;
   margin-top: -8%;
+}
+
+.lab-abstract {
+  
+}
+
+.lab-text {
+  font-size: 3rem;
+  text-align: left;
+  color: white;
+}
+
+.lab-left-half {
+  float: left;
+  width: 50%;
+}
+
+.lab-right-half {
+  float: right;
+  width: 50%;
+}
+
+.lab-td {
+  border: 1px solid white;
+  width: auto;
+  font-size: 2rem;
 }
