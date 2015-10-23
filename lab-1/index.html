@@ -63,7 +63,8 @@
           <div class="layer-content">
             <h3 class='lab-subtitle'>Terms and Definitions</h3>
             <p class='lab-text lab-terms'>
-
+              <br />
+              <b>Lux:</b> A unit of illumination
             </p>            
           </div>
         </div>
@@ -100,7 +101,7 @@
                 <script>
                   var distance = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110];
                   var illumination = [770, 258.7, 145.7, 109, 91.1, 82.7, 89.3, 66.5, 65.3, 68.3, 69.1];
-                  var finalObj = "<table>";
+                  var finalObj = "<table class='lab-table'>";
                   finalObj += "<tr><td class='lab-td'>Distance</td><td class='lab-td'>Illumination</td><td class='lab-td'>Distance</td><td class='lab-td'>Illumination</td></tr>"
                   for (var i = 0; i < distance.length/2; i++) {
                     finalObj += "<tr><td class='lab-td'>" + distance[i] + "</td><td class='lab-td'>" + illumination[i] + "</td><td class='lab-td'>" + distance[i + 4] + "</td><td class ='lab-td'>" + illumination[i + 4] + "</tr>";
@@ -126,9 +127,9 @@
         <div class="parallax__layer parallax__layer--base">
           <div class="layer-content">
             <h3 class='lab-subtitle'>Pictures and Diagrams</h3>
-            <p class='lab-text lab-pictures'>
+            <div class='lab-text lab-pictures'>
 
-            </p>
+            </div>
           </div>
         </div>
       </div>
