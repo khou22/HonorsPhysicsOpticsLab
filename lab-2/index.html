@@ -29,9 +29,9 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="site-header">
-            <h1 class="site-title">Lab 1: Light and Distance</h1>
-            <h3 class="site-subtitle">Introduction to Optics</h3>
+          <div class="lab-header">
+            <h1 class="lab-title">Lab 2: Thin Lens Equation</h1>
+            <h3 class="lab-project-subtitle">Real Images and the Thin Lens Equation</h3>
           </div>
         </div>
       </div>
@@ -46,8 +46,10 @@
             <div class="scroll-down-animation scroll-down-arrow">
               <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
             </div>
-            <h3 class='site-subtitle'>Abstract</h3>
-            
+            <h3 class='lab-subtitle'>Abstract</h3>
+            <p class='lab-text lab-abstract'>
+              The lab was designed to demonstrate the way lenses affect the behavior of light. A mathematical formula that relates object distance, image distance and focal distance was also derived.
+            </p>
           </div>
         </div>
       </div>
@@ -58,9 +60,12 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="layer-content lab-abstract">
-            <h3 class='site-subtitle'>Terms and Definitions</h3>
-            
+          <div class="layer-content">
+            <h3 class='lab-subtitle'>Terms and Definitions</h3>
+            <p class='lab-text lab-terms'>
+              <br />
+              <b>Lux:</b> A unit of illumination
+            </p>            
           </div>
         </div>
       </div>
@@ -71,10 +76,14 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="layer-content lab-abstract">
-            <h3 class='site-subtitle'>Overview of Lab</h3>
-            <h4 class='site-section-title'>Description</h4>
-            <h4 class='site-section-title'>Purpose</h4>
+          <div class="layer-content">
+            <h3 class='lab-subtitle'>Overview of Lab</h3>
+            <p class='lab-text lab-overview'>
+              Convex lenses were used to explore the properties of light  and the projection of real images on screens in setups involving a screen, ambient light and lenses of differing focal lengths. The lens used to determine the relationship between object distance and image distance was a convex lens with a 10cm focal length.
+            </p>
+            <p class='lab-text lab-purpose'>
+              The purpose was to observe the properties of real images, specifically magnification and orientation of images, projected on a screen. 
+            </p>
           </div>
         </div>
       </div>
@@ -85,10 +94,55 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="layer-content lab-abstract">
-            <h3 class='site-subtitle'>Data</h3>
-            <h4 class='site-section-title'>Observations, Notes</h4>
-            <h4 class='site-section-title'>Graphs</h4>
+          <div class="layer-content">
+            <h3 class='lab-subtitle'>Data</h3>
+            <div class="lab-left-half lab-table-description">
+              <p class="lab-table-title"><b>When Image is Most Focused</b></p>
+              <div class='lab-text lab-data lab-table'>
+                <table class='lab-table'>
+                  <tr>
+                    <td class='lab-td'>Object Distance</td>
+                    <td class='lab-td'>50 cm</td>
+                  </tr>
+                  <tr>
+                    <td class='lab-td'>Image Distance</td>
+                    <td class='lab-td'>12.5 cm</td>
+                  </tr>
+                  <tr>
+                    <td class='lab-td'>Size</td>
+                    <td class='lab-td'>Smaller</td>
+                  </tr>
+                  <tr>
+                    <td class='lab-td'>Shape</td>
+                    <td class='lab-td'>Same</td>
+                  </tr>
+                  <tr>
+                    <td class='lab-td'>Orientation</td>
+                    <td class='lab-td'>Upside down and flipped about the vertical axis</td>
+                  </tr>
+                </table>
+              </div>
+              Analysis: The image projected is smaller and upside down than the original.
+            </div>
+            <div class="lab-right-half lab-table-description">
+              <p class="lab-table-title"><b>Object Distance vs. Image Distance </p>When Projected Image is Focused (cm)</b>
+              <div class='lab-text lab-data lab-table' id="lab-table1">
+                <script>
+                  var distance = [30, 18.5, 47.5, 50, 53.5, 25, 15];
+                  var image = [14, 19.5, 12, 11.8, 11.7, 15.5, 26];
+                  var finalObj = "<table class='lab-table'>";
+                  finalObj += "<tr><td class='lab-td'>Object Distance</td><td class='lab-td'>Image Object</td><td class='lab-td'>Object Distance</td><td class='lab-td'>Image Distance</td></tr>"
+                  for (var i = 0; i < distance.length/2; i++) {
+                    var tDist = distance[i + 4] != undefined ? distance[i+4] : " "
+                    var tImg = distance[i + 4] != undefined ? distance[i+4] : " "
+                    finalObj += "<tr><td class='lab-td'>" + distance[i] + "</td><td class='lab-td'>" + image[i] + "</td><td class='lab-td'>" + tDist + "</td><td class ='lab-td'>" + tImg + "</tr>";
+                  }
+                  finalObj += "</table>";
+                  document.getElementById('lab-table1').innerHTML = finalObj;
+                </script>
+              </div>
+              Analysis: Object distance and image distance are inversely proportional
+            </div>
           </div>
         </div>
       </div>
@@ -99,9 +153,11 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="layer-content lab-abstract">
-            <h3 class='site-subtitle'>Pictures and Diagrams</h3>
+          <div class="layer-content">
+            <h3 class='lab-subtitle'>Pictures and Diagrams</h3>
+            <div class='lab-text lab-pictures'>
 
+            </div>
           </div>
         </div>
       </div>
@@ -112,8 +168,19 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="layer-content lab-abstract">
-            <h3 class='site-subtitle'>Equations and Calculations</h3>
+          <div class="layer-content">
+            <h3 class='lab-subtitle'>Equations and Calculations</h3>
+            <p class='lab-text lab-calculations'>
+              The illumination decreases until the ambient light makes the light variance, due to distance, negligible.
+              <br />
+              <hr />
+              <p class='lab-text'>
+                1/d + 1/i = 1/f
+                <br />
+                (the focal distance was 10 cm in this lab)
+                Where d is the object distance, i is the image distance and f is the focal distance
+              </p>
+            </p>
             
           </div>
         </div>
@@ -125,8 +192,11 @@
           </div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="layer-content lab-abstract">
-            <h3 class='site-subtitle'>Analysis and Conclusion</h3>
+          <div class="layer-content">
+            <h3 class='lab-subtitle'>Analysis and Conclusion</h3>
+            <p class='lab-text lab-conclusion'>
+              We learned that object distance and image distance are inversely proportional. The light rays through the convex lens converge on a surface, creating a real image, even if the image produced is distorted from the original one. The equation allows us to calculate the focal distance, image distance or object distance when given two of the three values.
+            </p>
             
           </div>
         </div>
