@@ -1,13 +1,13 @@
 .parallax {
   perspective: 1.1px;
-  height: 110vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #3286A8;
 }
 .parallax__layer {
   position: absolute;
-  top: 0;
+  top: -28px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -19,7 +19,7 @@
 
 .parallax__layer--back {
   transform: translateZ(-1px);
-  height: 300%; /* Now the background is only 50% height */
+  /*height: 300%;  Now the background is only 50% height */
   width: 400%;
   left: -175%;
   top: -50%;
