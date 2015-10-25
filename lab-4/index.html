@@ -30,8 +30,7 @@
         </div>
         <div class="parallax__layer parallax__layer--base">
           <div class="lab-header">
-            <h1 class="lab-title">Lab 1: Light and Distance</h1>
-            <h3 class="lab-project-subtitle">Introduction to Optics</h3>
+            <h1 class="lab-title">Lab 4: Aperature and Depth of Field</h1>
           </div>
         </div>
       </div>
@@ -48,7 +47,7 @@
             </div>
             <h3 class='lab-subtitle'>Abstract</h3>
             <p class='lab-text lab-abstract'>
-              In this lab a sensor was used to determine the relationship between light intensity and the distance between the light source and the sensor to determine that as distance increases, illumination decreases as a polynomial function. The reason for the diminishing in brightness is due to the dispersion of light rays that decreases the number of rays that eventually end up being perceived by the sensor.
+              This lab introduced us to the concept of an aperture and of a depth of field. These two characteristics are commonly known as image focus — such as the focus of a camera.
             </p>
           </div>
         </div>
@@ -64,7 +63,13 @@
             <h3 class='lab-subtitle'>Terms and Definitions</h3>
             <p class='lab-text lab-terms'>
               <br />
-              <b>Lux:</b> A unit of illumination
+              <b>Objective lens:</b> The lens that gathers light and focuses it onto the eyepiece. It dictates the function of the optical instrument.
+              <br />
+              <b>Eyepiece:</b> The lense that is closest to the user’s eye in an optical instrument (telescope, microscope, etc.)
+              <br />
+              <b>Depth of Field:</b> The distance between the shortest and largest distances by which an image can still be sharply seen. It is often described as the area in which an image is focused.
+              <br />
+              <b>Aperture:</b> The opening through which light passes through. It is responsible for the amount of light that can enter into a space.
             </p>            
           </div>
         </div>
@@ -79,10 +84,11 @@
           <div class="layer-content">
             <h3 class='lab-subtitle'>Overview of Lab</h3>
             <p class='lab-text lab-overview'>
-              The lab uses a light source of invariable intensity and a light sensor on a track. The light sensor is moved away from the light source by 10 cm increments and records the intensity of light in lux. Any data taken either by hand or on the computer 
+              By adjusting various combinations of lenses, light sources, images, apertures, and distances, you can create a real image. In order to find the relationship between the aperture and the depth of field, we changed the size of the aperture and observed the resulting depth of field. In order to find the depth of field, we moved both the image and object distance until a “clear” image could be seen.
             </p>
+            <hr />
             <p class='lab-text lab-purpose'>
-              The purpose was to determine a mathematical relationship between intensity of light and the distance between the sensor and light source.
+              The purpose of the lab was to investigate the relationship between the aperture and the depth of field.
             </p>
           </div>
         </div>
@@ -99,12 +105,12 @@
             <div class="lab-left-half">
               <div class='lab-text lab-data lab-table' id="lab-table">
                 <script>
-                  var distance = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110];
-                  var illumination = [770, 258.7, 145.7, 109, 91.1, 82.7, 89.3, 66.5, 65.3, 68.3, 69.1];
+                  var aperature = [5, 4, 3, 2, 1];
+                  var depth = [1.2, 1.5, 2, 2.5, 2.7];
                   var finalObj = "<table class='lab-table'>";
-                  finalObj += "<tr><td class='lab-td'>Distance</td><td class='lab-td'>Illumination</td><td class='lab-td'>Distance</td><td class='lab-td'>Illumination</td></tr>"
-                  for (var i = 0; i < distance.length/2; i++) {
-                    finalObj += "<tr><td class='lab-td'>" + distance[i] + "</td><td class='lab-td'>" + illumination[i] + "</td><td class='lab-td'>" + distance[i + 4] + "</td><td class ='lab-td'>" + illumination[i + 4] + "</tr>";
+                  finalObj += "<tr><td class='lab-td'>Aperature</td><td class='lab-td'>Depth of Field (cm)</td></tr>"
+                  for (var i = 0; i < aperature.length; i++) {
+                    finalObj += "<tr><td class='lab-td'>" + aperature[i] + "</td><td class='lab-td'>" + depth[i] + "</td></tr>";
                   }
                   finalObj += "</table>";
                   document.getElementById('lab-table').innerHTML = finalObj;
@@ -112,8 +118,13 @@
               </div>
             </div>
             <div class="lab-right-half">
-              <h4 class='lab-section-title'>Observations, Notes</h4>
-              <h4 class='lab-section-title'>Graphs</h4>
+              <h4 class='lab-section-title'>Observations, Notes:</h4>
+              <p class="lab-text">
+                <ul>
+                  <li>Smaller aperture corresponds with a greater depth of field.</li>
+                  <li>See the graph below for more details</li>
+                </ul>
+              </p>
             </div>
           </div>
         </div>
@@ -126,10 +137,7 @@
         </div>
         <div class="parallax__layer parallax__layer--base">
           <div class="layer-content">
-            <h3 class='lab-subtitle'>Pictures and Diagrams</h3>
-            <div class='lab-text lab-pictures'>
-
-            </div>
+            <img src='../media/graphs/Aperature vs. Depth of Field.png' style="width: 100%; border: 1px solid white" align="middle">
           </div>
         </div>
       </div>
@@ -141,16 +149,9 @@
         </div>
         <div class="parallax__layer parallax__layer--base">
           <div class="layer-content">
-            <h3 class='lab-subtitle'>Equations and Calculations</h3>
-            <p class='lab-text lab-calculations'>
-              The illumination decreases until the ambient light makes the light variance, due to distance, negligible.
-              <br />
-              <hr />
-              <p class='lab-text'>
-                [(7.097 * 10^4)/(D^2)] + 64.54
-                <br />
-                Where D is the distance between the light and the sensor
-              </p>
+            <h3 class='lab-subtitle'>Analysis and Conclusion</h3>
+            <p class='lab-text lab-conclusion'>
+              We learned how the size of the aperture can increase or decrease the depth of field. This lab gave us a healthy understanding of how images are formed in a camera and the function of the aperture within that system. It was interesting seeing how the relatively complex physics that we learn in the classroom can be applied to such simple devices such as your camera.
             </p>
             
           </div>
@@ -164,11 +165,15 @@
         </div>
         <div class="parallax__layer parallax__layer--base">
           <div class="layer-content">
-            <h3 class='lab-subtitle'>Analysis and Conclusion</h3>
-            <p class='lab-text lab-conclusion'>
-              We learned that as a sensor is moved farther away from the light source, the perception of illumination is lowered. The light disperses from the light source, decreasing the number of light rays that are percepted, be it by a digital sensor or biological one (i.e. your eye). However, the at some distance, the light perceived by the source is negligible compared to the ambient light of, for example, the sun. The relationship between distance and illumination perceived is a polynomial function.
-            </p>
-            
+            <h3 class='lab-subtitle'>Pictures and Diagrams</h3>
+            <div class='lab-text lab-pictures'>
+              <div class='lab-left-half'>
+                <img src='../media/images/lab4.jpg' style="max-width: 80%; border: 1px solid white">
+              </div>
+              <div class='lab-right-half'>
+                <img src='../media/images/lab4-1.jpg' style="max-width: 80%; border: 1px solid white">
+              </div>
+            </div>
           </div>
         </div>
       </div>
